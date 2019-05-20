@@ -22,29 +22,82 @@ automation_levels <- data.frame(c(1:3, c("4a", "4b"), 5:7),
                                   "R project under version control (VC)",
                                   "R project under VC and peer reviewed (wrangling)",
                                   "Replicable report in Rmarkdown (publication)",
-                                  "Near RAP (VC, peer review, data quality assurance)",
+                                  "Near RAP (as above plus data quality assurance and                                          package management)",
                                   "Full RAP (as above plus unit testing and documentation)",
                                   "R package"))
 
 ```
 
-## Introductions
+## What we will cover today
 
-- The Information Services Division (ISD) of the National Health Service (NHS) Scotland produces around 200 official and national statistics publications each year.
-- Traditional publication format is a **static pdf document** with accompanying **excel tables**.
-- Production uses **proprietary software** and is **time-consuming**, involving extensive manual formatting and checking.
+<div class="columns-2">
+<ul>
+```{r out.width = "22%"}
+include_graphics("images/Anna_Avatar.jpg")
+```
+<br>
+```{r out.width = "6%"}
+include_graphics("images/twitter.png")
+```
+@price_AH
+<br>
+```{r out.width = "6%"}
+include_graphics("images/github.png")
+```
+annahprice
+</ul>
+<ul>
+**Anna Price**: Levels of RAP and biggest challenges
+</div>
 
-## Introductions
+<div class="columns-2">
+<ul>
+```{r out.width = "22%"}
+include_graphics("images/David_Avatar.jpg")
+```
+<br>
+```{r out.width = "6%"}
+include_graphics("images/twitter.png")
+```
+@Tyjet92
+<br>
+```{r out.width = "6%"}
+include_graphics("images/github.png")
+```
+davidc92
+</ul>
+<ul>
+**David Caldwell**: Our first RAP project
+</div>
 
-Introduce the three of us, contact details and our roles on the team
+<div class="columns-2">
+<ul>
+```{r out.width = "22%"}
+include_graphics("images/Jack_Avatar.jpg")
+```
+<br>
+```{r out.width = "6%", }
+include_graphics("images/github.png")
+```
+jackhannah95
+</ul>
+<ul>
+**Jack Hannah**: Scaling RAP in NHS Scotland
+</div>
 
-Contact Transforming Publishing: nss.isdtransformingpublishing@nhs.net
-
-[Transforming Publishing web pages](http://www.isdscotland.org/Products-and-Services/Transforming-Publishing-Programme/)
-
+<br>
+Contact us: nss.isdtransformingpublishing@nhs.net
 [Transforming Publishing on GitHub](https://github.com/NHS-NSS-transforming-publications)
 
-[PHI on GitHub](https://github.com/Health-SocialCare-Scotland)
+## Background
+
+- The Information Services Division (ISD) of the National Health Service (NHS) Scotland produces around 200 official and national statistics publications each year.
+- Traditional publication output is a **static pdf document** with accompanying **excel tables**.
+- Production uses **proprietary software** and is **time-consuming**, involving extensive manual formatting and checking.
+
+```{r out.width = "40%", fig.align = 'center'}
+include_graphics("images/pdf report.png")
+```
 
 ## What is a RAP project?
 
@@ -52,9 +105,13 @@ Contact Transforming Publishing: nss.isdtransformingpublishing@nhs.net
 - High quality and auditable = version control
 - Sustainable = peer review
 
-"Bells and whistles" include writing functions, documenting/testing these functions, package management and computing environment control.
+**Put in RAP jigsaw**
 
-## Levels of RAP/automation
+<br>
+
+"Bells and whistles" include _writing functions, documenting/testing these functions, package management and computing environment control_.
+
+## [Levels of RAP/automation](https://www.isdscotland.org/About-ISD/Methodologies/_docs/Reproducible_Analytical_Pipelines_paper_v1.4.pdf)
 
 ```{r, echo = FALSE}
     kable(automation_levels,
@@ -66,18 +123,27 @@ Contact Transforming Publishing: nss.isdtransformingpublishing@nhs.net
 
 - Senior management buy in
 - Culture change (peer review and working in the open)
-- New software such as R and git
+- New skills for analysts to learn (R, git, etc)
 - Required development time
 - Range of data sources and/or unstable production process
-- IT (R and version control)
+- IT...
 
 ## IT Infrastructure
 
-- R desktop and server
+- R desktop and server versions
 - RStudio Server Pro
+- Package management
 - git
-- GitHub/Gitea
+- git-repository hosting service (GitHub/Gitea)
 
-## Questions
+And what's next...? Travis? Docker?
 
-Experience with similar challenges in other organisations?
+## Questions/Discussion
+
+Do others have experience of similar challenges in their department/organisation?
+<br>
+<br>
+What makes a RAP project?
+<br>
+<br>
+What level of RAP are others working to?
