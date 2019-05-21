@@ -104,12 +104,11 @@ include_graphics("images/pdf report.png")
 - No (or few) manual steps = data and output produced using code
 - High quality and auditable = version control
 - Sustainable = peer review
+- "Bells and whistles" = _functions, documenting/testing these functions, package management and computing environment_
 
-**Put in RAP jigsaw**
-
-<br>
-
-"Bells and whistles" include _writing functions, documenting/testing these functions, package management and computing environment control_.
+```{r out.width = "60%", fig.align = 'center'}
+include_graphics("images/rap.jpg")
+```
 
 ## [Levels of RAP/automation](https://www.isdscotland.org/About-ISD/Methodologies/_docs/Reproducible_Analytical_Pipelines_paper_v1.4.pdf)
 
